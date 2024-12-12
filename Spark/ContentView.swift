@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var showCancelView = false
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            VStack {
+                NavigationLink(destination: TaskTimeFrame()) {
+                    Text("Hello To Spark App")
+                }
+            }
+            .navigationTitle("Hello To Spark App")
         }
-        .padding()
     }
 }
 

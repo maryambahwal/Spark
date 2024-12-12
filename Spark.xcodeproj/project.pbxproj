@@ -14,6 +14,7 @@
 		5CED04662D08BCEB0021E731 /* SparkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CED04652D08BCEB0021E731 /* SparkTests.swift */; };
 		5CED04702D08BCEB0021E731 /* SparkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CED046F2D08BCEB0021E731 /* SparkUITests.swift */; };
 		5CED04722D08BCEB0021E731 /* SparkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CED04712D08BCEB0021E731 /* SparkUITestsLaunchTests.swift */; };
+		5CED047F2D08CFEC0021E731 /* TaskTimeFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CED047E2D08CFEC0021E731 /* TaskTimeFrame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		5CED046B2D08BCEB0021E731 /* SparkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SparkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CED046F2D08BCEB0021E731 /* SparkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparkUITests.swift; sourceTree = "<group>"; };
 		5CED04712D08BCEB0021E731 /* SparkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparkUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5CED047E2D08CFEC0021E731 /* TaskTimeFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTimeFrame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				5CED04542D08BCE90021E731 /* SparkApp.swift */,
 				5CED04562D08BCE90021E731 /* ContentView.swift */,
+				5CED047E2D08CFEC0021E731 /* TaskTimeFrame.swift */,
 				5CED04582D08BCEA0021E731 /* Assets.xcassets */,
 				5CED045A2D08BCEA0021E731 /* Preview Content */,
 			);
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CED047F2D08CFEC0021E731 /* TaskTimeFrame.swift in Sources */,
 				5CED04572D08BCE90021E731 /* ContentView.swift in Sources */,
 				5CED04552D08BCE90021E731 /* SparkApp.swift in Sources */,
 			);
