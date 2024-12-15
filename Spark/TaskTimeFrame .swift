@@ -6,12 +6,13 @@ struct TaskTimeFrame: View {
     @State private var remainingTime: TimeInterval = 0
     @State private var taskTimer: Timer? = nil
     @State private var showAlert = false
-
+    
     var duration: TimeInterval // Accept duration from TaskView
+    var name: String       // Accept task name dynamically
 
     var body: some View {
         VStack {
-            Text("Task Timer")
+            Text(name) // Display the task name dynamically
                 .font(.system(size: 50, weight: .medium, design: .default))
                 .foregroundColor(.primary)
                 .padding(.bottom, 5)
@@ -19,7 +20,7 @@ struct TaskTimeFrame: View {
             Text(formatTime(remainingTime))
                 .font(.system(size: 50, weight: .ultraLight))
                 .foregroundColor(.primary.opacity(0.94))
-                .padding(.bottom , 60)
+                .padding(.bottom, 60)
 
             ZStack {
                 Circle()
@@ -40,7 +41,7 @@ struct TaskTimeFrame: View {
                     .frame(width: 227.06, height: 110.76)
             }
             .frame(width: 330, height: 330)
-            .padding(.bottom , 100)
+            .padding(.bottom, 100)
         }
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
@@ -98,6 +99,6 @@ struct TaskTimeFrame: View {
 
 #Preview {
     NavigationStack {
-        TaskTimeFrame(duration: 900) // Example duration in seconds
+        TaskTimeFrame(duration: 900, name: "Example Task") // Pass task name here
     }
 }

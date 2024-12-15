@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct TaskList: View {
-    @State private var tasks: [Task] = [] // State to hold tasks
+//    @State private var tasks: [Task] = [] // State to hold tasks
+    @State private var tasks: [Task] = Task.sampleTasks
     @State private var showAddTask = false // State to show the add task sheet
 
     var body: some View {
@@ -50,6 +51,7 @@ struct TaskList: View {
         }) {
             Image(systemName: "plus")
                 .foregroundColor(.our)
+                
         }
     }
 

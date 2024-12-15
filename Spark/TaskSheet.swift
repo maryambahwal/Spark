@@ -24,6 +24,7 @@ struct TaskSheet: View {
                     HStack {
                         Image(systemName: "clock")
                         Picker("Duration", selection: $duration) {
+                            Text("1 min").tag("1 min")
                             Text("15 min").tag("15 min")
                             Text("25 min").tag("25 min")
                             Text("30 min").tag("30 min")
