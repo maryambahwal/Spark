@@ -42,12 +42,12 @@ struct HomeView: View {
                 // النصوص
                 Text("Hi \(userName)!")
                     .font(.largeTitle)
-                    .foregroundColor(.white)
+                    .foregroundColor(.primary)
                     .multilineTextAlignment(.center)
                     
                 Text("Add your today’s tasks to watch me grow!")
                     .font(.title3)
-                    .foregroundColor(.white)
+                    .foregroundColor(.primary)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 20)
                 
@@ -85,7 +85,7 @@ struct HomeView: View {
                 Spacer()
             }
         }
-        .background(Color.black.edgesIgnoringSafeArea(.all))
+       
         .sheet(isPresented: $isTaskSheetPresented) { // عرض TaskSheet عند الضغط على الزر
             TaskSheet(tasks: $tasks) // تمرير قائمة المهام إلى TaskSheet
         }
@@ -110,12 +110,12 @@ struct IntroduceView: View {
             // Text
             Text("Introduce yourself to me")
                 .font(.title2)
-                .foregroundColor(.white)
+                .foregroundColor(.primary)
             
             // TextField
             TextField("Enter Your Name", text: $name)
                 .padding(10)
-                .background(Color.white)
+                .background(Color.primary)
                 .cornerRadius(8)
                 .padding(.horizontal, 20)
             
@@ -125,6 +125,7 @@ struct IntroduceView: View {
                     // Save the name in UserDefaults
                     UserDefaults.standard.set(name, forKey: "UserName")
                     isNextActive = true
+                    
                 }
             }) {
                 Text("Next")
@@ -140,7 +141,8 @@ struct IntroduceView: View {
             
             Spacer()
         }
-        .background(Color.black.edgesIgnoringSafeArea(.all))
+        .navigationBarBackButtonHidden(true)
+       
         .fullScreenCover(isPresented: $isNextActive) {
             HomeView(userName: name)
         }

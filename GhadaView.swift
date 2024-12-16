@@ -20,21 +20,21 @@ struct GhadaView: View {
                         Spacer()
                         // Skip button
                         Button(action: {
-                            isSkipPressed = true // Navigate to HomePage
+                            isSkipPressed = true
                         }) {
                             Text("Skip")
                                 .foregroundColor(.our)
-                               // .padding(.top, 20)
                                 .padding(.trailing, 20)
                         }
                         .background(
                             NavigationLink(
-                                destination: HomePage(),
+                                destination: IntroduceView(),
                                 isActive: $isSkipPressed,
                                 label: { EmptyView() }
                             )
-                            .hidden()
+                        
                         )
+
                     }
                     .padding(.horizontal)
 
@@ -45,6 +45,7 @@ struct GhadaView: View {
                                 .tag(index)
                         }
                     }
+                    
                     .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
                     .onChange(of: selectedIndex, perform: { _ in
                         updateProgress()
@@ -65,11 +66,13 @@ struct GhadaView: View {
                         .padding(.bottom, -190)
                         .edgesIgnoringSafeArea(.bottom)
                 }
+               
             }
             .onAppear {
                 updateProgress()
             }
         }
+       
     }
 
     func updateProgress() {
@@ -118,6 +121,7 @@ struct PageContentView: View {
                 .frame(maxWidth: 350)
                 .padding(.bottom, 50)
         }
+       
         .padding(.horizontal, 25)
     }
 
