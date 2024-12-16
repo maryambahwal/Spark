@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45D39BBD2D10040A00123DA5 /* HomePsge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D39BBC2D10040A00123DA5 /* HomePsge.swift */; };
+		45D39BC12D1004FF00123DA5 /* GhadaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D39BC02D1004FF00123DA5 /* GhadaView.swift */; };
+		45D39BC32D10050600123DA5 /* PageContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D39BC22D10050600123DA5 /* PageContent.swift */; };
 		5CED04552D08BCE90021E731 /* SparkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CED04542D08BCE90021E731 /* SparkApp.swift */; };
 		5CED04572D08BCE90021E731 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CED04562D08BCE90021E731 /* ContentView.swift */; };
 		5CED04592D08BCEA0021E731 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CED04582D08BCEA0021E731 /* Assets.xcassets */; };
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		45D39BBC2D10040A00123DA5 /* HomePsge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomePsge.swift; path = ../../../Desktop/SparkOnB/SparkOnB/HomePsge.swift; sourceTree = "<group>"; };
+		45D39BC02D1004FF00123DA5 /* GhadaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GhadaView.swift; path = ../../../Desktop/SparkOnB/SparkOnB/GhadaView.swift; sourceTree = "<group>"; };
+		45D39BC22D10050600123DA5 /* PageContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PageContent.swift; path = ../../../Desktop/SparkOnB/SparkOnB/PageContent.swift; sourceTree = "<group>"; };
 		5CED04512D08BCE90021E731 /* Spark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CED04542D08BCE90021E731 /* SparkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparkApp.swift; sourceTree = "<group>"; };
 		5CED04562D08BCE90021E731 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,6 +105,9 @@
 				5CED04542D08BCE90021E731 /* SparkApp.swift */,
 				5CED04562D08BCE90021E731 /* ContentView.swift */,
 				5CED047E2D08CFEC0021E731 /* TaskTimeFrame.swift */,
+				45D39BC02D1004FF00123DA5 /* GhadaView.swift */,
+				45D39BC22D10050600123DA5 /* PageContent.swift */,
+				45D39BBC2D10040A00123DA5 /* HomePsge.swift */,
 				5CED04582D08BCEA0021E731 /* Assets.xcassets */,
 				5CED045A2D08BCEA0021E731 /* Preview Content */,
 			);
@@ -260,7 +269,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45D39BC12D1004FF00123DA5 /* GhadaView.swift in Sources */,
+				45D39BC32D10050600123DA5 /* PageContent.swift in Sources */,
 				5CED047F2D08CFEC0021E731 /* TaskTimeFrame.swift in Sources */,
+				45D39BBD2D10040A00123DA5 /* HomePsge.swift in Sources */,
 				5CED04572D08BCE90021E731 /* ContentView.swift in Sources */,
 				5CED04552D08BCE90021E731 /* SparkApp.swift in Sources */,
 			);
