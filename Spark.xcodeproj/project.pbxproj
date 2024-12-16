@@ -14,6 +14,9 @@
 		5CED04662D08BCEB0021E731 /* SparkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CED04652D08BCEB0021E731 /* SparkTests.swift */; };
 		5CED04702D08BCEB0021E731 /* SparkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CED046F2D08BCEB0021E731 /* SparkUITests.swift */; };
 		5CED04722D08BCEB0021E731 /* SparkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CED04712D08BCEB0021E731 /* SparkUITestsLaunchTests.swift */; };
+		79AB6B792D10041300BC0051 /* Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AB6B782D10041300BC0051 /* Gif.swift */; };
+		79AB6B7B2D10041E00BC0051 /* dogGif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 79AB6B7A2D10041E00BC0051 /* dogGif.gif */; };
+		79AB6B7D2D10048E00BC0051 /* homeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AB6B7C2D10048E00BC0051 /* homeView.swift */; };
 		ECD447772D0AD377003DBF56 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD447762D0AD377003DBF56 /* Task.swift */; };
 		ECD447792D0AD37A003DBF56 /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD447782D0AD37A003DBF56 /* TaskList.swift */; };
 		ECD4477B2D0AD37C003DBF56 /* TaskSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD4477A2D0AD37C003DBF56 /* TaskSheet.swift */; };
@@ -49,6 +52,9 @@
 		5CED046B2D08BCEB0021E731 /* SparkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SparkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CED046F2D08BCEB0021E731 /* SparkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparkUITests.swift; sourceTree = "<group>"; };
 		5CED04712D08BCEB0021E731 /* SparkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparkUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		79AB6B782D10041300BC0051 /* Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Gif.swift; path = ../../../Desktop/ADHD/ADHD/Gif.swift; sourceTree = "<group>"; };
+		79AB6B7A2D10041E00BC0051 /* dogGif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = dogGif.gif; path = ../../../Downloads/dogGif.gif; sourceTree = "<group>"; };
+		79AB6B7C2D10048E00BC0051 /* homeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = homeView.swift; path = ../../../Desktop/ADHD/ADHD/homeView.swift; sourceTree = "<group>"; };
 		ECD447762D0AD377003DBF56 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		ECD447782D0AD37A003DBF56 /* TaskList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
 		ECD4477A2D0AD37C003DBF56 /* TaskSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskSheet.swift; sourceTree = "<group>"; };
@@ -106,6 +112,9 @@
 			children = (
 				5CED04542D08BCE90021E731 /* SparkApp.swift */,
 				5CED04562D08BCE90021E731 /* ContentView.swift */,
+				79AB6B7C2D10048E00BC0051 /* homeView.swift */,
+				79AB6B782D10041300BC0051 /* Gif.swift */,
+				79AB6B7A2D10041E00BC0051 /* dogGif.gif */,
 				ECD447762D0AD377003DBF56 /* Task.swift */,
 				ECD447782D0AD37A003DBF56 /* TaskList.swift */,
 				ECD4477A2D0AD37C003DBF56 /* TaskSheet.swift */,
@@ -247,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CED045C2D08BCEA0021E731 /* Preview Assets.xcassets in Resources */,
+				79AB6B7B2D10041E00BC0051 /* dogGif.gif in Resources */,
 				5CED04592D08BCEA0021E731 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,11 +284,13 @@
 			files = (
 				ECD4477B2D0AD37C003DBF56 /* TaskSheet.swift in Sources */,
 				ECD447772D0AD377003DBF56 /* Task.swift in Sources */,
+				79AB6B792D10041300BC0051 /* Gif.swift in Sources */,
 				ECD447792D0AD37A003DBF56 /* TaskList.swift in Sources */,
 				ECD4477D2D0AD37E003DBF56 /* TaskTimeFrame .swift in Sources */,
 				5CED04572D08BCE90021E731 /* ContentView.swift in Sources */,
 				5CED04552D08BCE90021E731 /* SparkApp.swift in Sources */,
 				ECD4477F2D0AD382003DBF56 /* TaskView.swift in Sources */,
+				79AB6B7D2D10048E00BC0051 /* homeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
