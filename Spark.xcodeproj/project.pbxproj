@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45976EF72D100E7500AB714E /* GhadaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45976EF62D100E7500AB714E /* GhadaView.swift */; };
+		45976EF92D100ECC00AB714E /* HomePsge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45976EF82D100ECC00AB714E /* HomePsge.swift */; };
+		45976EFB2D100ED400AB714E /* PageContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45976EFA2D100ED400AB714E /* PageContent.swift */; };
 		5CED04552D08BCE90021E731 /* SparkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CED04542D08BCE90021E731 /* SparkApp.swift */; };
 		5CED04572D08BCE90021E731 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CED04562D08BCE90021E731 /* ContentView.swift */; };
 		5CED04592D08BCEA0021E731 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CED04582D08BCEA0021E731 /* Assets.xcassets */; };
@@ -39,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		45976EF62D100E7500AB714E /* GhadaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GhadaView.swift; sourceTree = "<group>"; };
+		45976EF82D100ECC00AB714E /* HomePsge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePsge.swift; sourceTree = "<group>"; };
+		45976EFA2D100ED400AB714E /* PageContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContent.swift; sourceTree = "<group>"; };
 		5CED04512D08BCE90021E731 /* Spark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CED04542D08BCE90021E731 /* SparkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparkApp.swift; sourceTree = "<group>"; };
 		5CED04562D08BCE90021E731 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -84,6 +90,9 @@
 		5CED04482D08BCE90021E731 = {
 			isa = PBXGroup;
 			children = (
+				45976EF62D100E7500AB714E /* GhadaView.swift */,
+				45976EFA2D100ED400AB714E /* PageContent.swift */,
+				45976EF82D100ECC00AB714E /* HomePsge.swift */,
 				5CED04532D08BCE90021E731 /* Spark */,
 				5CED04642D08BCEB0021E731 /* SparkTests */,
 				5CED046E2D08BCEB0021E731 /* SparkUITests */,
@@ -275,7 +284,10 @@
 				ECD4477B2D0AD37C003DBF56 /* TaskSheet.swift in Sources */,
 				ECD447772D0AD377003DBF56 /* Task.swift in Sources */,
 				ECD447792D0AD37A003DBF56 /* TaskList.swift in Sources */,
+				45976EFB2D100ED400AB714E /* PageContent.swift in Sources */,
+				45976EF72D100E7500AB714E /* GhadaView.swift in Sources */,
 				ECD4477D2D0AD37E003DBF56 /* TaskTimeFrame .swift in Sources */,
+				45976EF92D100ECC00AB714E /* HomePsge.swift in Sources */,
 				5CED04572D08BCE90021E731 /* ContentView.swift in Sources */,
 				5CED04552D08BCE90021E731 /* SparkApp.swift in Sources */,
 				ECD4477F2D0AD382003DBF56 /* TaskView.swift in Sources */,
