@@ -29,8 +29,7 @@ struct Task: Identifiable {
             Task(name: "Morning Exercise", duration: "30 min", priority: "⚡️ High", isChecked: false),
             Task(name: "Grocery Shopping", duration: "45 min", priority: "⏳ Medium", isChecked: true),
             Task(name: "Code Review", duration: "60 min", priority: "⚡️ High", isChecked: false),
-            Task(name: "Read Book", duration: "20 min", priority: "⏳ Medium", isChecked: false),
-            Task(name: "Meditation", duration: "15 min", priority: "🌿 Low", isChecked: true)
+            
         ]
 }
 

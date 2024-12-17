@@ -11,8 +11,8 @@ import SwiftUI
 struct SparkApp: App {
     var body: some Scene {
         WindowGroup {
-            TaskList()
-                .accentColor(.our)
+            GhadaView()
+              
         }
     }
 }

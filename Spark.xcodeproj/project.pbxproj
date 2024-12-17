@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5CA3C2D22D115C83003F647F /* GhadaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA3C2D12D115C83003F647F /* GhadaView.swift */; };
+		5CA3C2D42D115CCB003F647F /* HomePsge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA3C2D32D115CCB003F647F /* HomePsge.swift */; };
+		5CA3C2D62D115CF5003F647F /* PageContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA3C2D52D115CF5003F647F /* PageContent.swift */; };
+		5CA3C2D82D115D4A003F647F /* Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA3C2D72D115D4A003F647F /* Gif.swift */; };
+		5CA3C2DA2D115D7B003F647F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA3C2D92D115D7B003F647F /* HomeView.swift */; };
+		5CA3C2DC2D115E96003F647F /* dogGif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5CA3C2DB2D115E96003F647F /* dogGif.gif */; };
 		5CED04552D08BCE90021E731 /* SparkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CED04542D08BCE90021E731 /* SparkApp.swift */; };
 		5CED04572D08BCE90021E731 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CED04562D08BCE90021E731 /* ContentView.swift */; };
 		5CED04592D08BCEA0021E731 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CED04582D08BCEA0021E731 /* Assets.xcassets */; };
@@ -39,6 +45,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5CA3C2D12D115C83003F647F /* GhadaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GhadaView.swift; sourceTree = "<group>"; };
+		5CA3C2D32D115CCB003F647F /* HomePsge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePsge.swift; sourceTree = "<group>"; };
+		5CA3C2D52D115CF5003F647F /* PageContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContent.swift; sourceTree = "<group>"; };
+		5CA3C2D72D115D4A003F647F /* Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gif.swift; sourceTree = "<group>"; };
+		5CA3C2D92D115D7B003F647F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		5CA3C2DB2D115E96003F647F /* dogGif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = dogGif.gif; path = ../../../../Downloads/dogGif.gif; sourceTree = "<group>"; };
 		5CED04512D08BCE90021E731 /* Spark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CED04542D08BCE90021E731 /* SparkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparkApp.swift; sourceTree = "<group>"; };
 		5CED04562D08BCE90021E731 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -85,7 +97,6 @@
 			isa = PBXGroup;
 			children = (
 				5CED04532D08BCE90021E731 /* Spark */,
-				5CED04642D08BCEB0021E731 /* SparkTests */,
 				5CED046E2D08BCEB0021E731 /* SparkUITests */,
 				5CED04522D08BCE90021E731 /* Products */,
 			);
@@ -105,13 +116,20 @@
 			isa = PBXGroup;
 			children = (
 				5CED04542D08BCE90021E731 /* SparkApp.swift */,
+				5CA3C2D32D115CCB003F647F /* HomePsge.swift */,
+				5CA3C2D92D115D7B003F647F /* HomeView.swift */,
+				5CA3C2D12D115C83003F647F /* GhadaView.swift */,
 				5CED04562D08BCE90021E731 /* ContentView.swift */,
+				5CA3C2D72D115D4A003F647F /* Gif.swift */,
+				5CA3C2D52D115CF5003F647F /* PageContent.swift */,
 				ECD447762D0AD377003DBF56 /* Task.swift */,
 				ECD447782D0AD37A003DBF56 /* TaskList.swift */,
 				ECD4477A2D0AD37C003DBF56 /* TaskSheet.swift */,
+				5CA3C2DB2D115E96003F647F /* dogGif.gif */,
 				ECD4477C2D0AD37E003DBF56 /* TaskTimeFrame .swift */,
 				ECD4477E2D0AD382003DBF56 /* TaskView.swift */,
 				5CED04582D08BCEA0021E731 /* Assets.xcassets */,
+				5CED04642D08BCEB0021E731 /* SparkTests */,
 				5CED045A2D08BCEA0021E731 /* Preview Content */,
 			);
 			path = Spark;
@@ -247,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CED045C2D08BCEA0021E731 /* Preview Assets.xcassets in Resources */,
+				5CA3C2DC2D115E96003F647F /* dogGif.gif in Resources */,
 				5CED04592D08BCEA0021E731 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,9 +293,14 @@
 			files = (
 				ECD4477B2D0AD37C003DBF56 /* TaskSheet.swift in Sources */,
 				ECD447772D0AD377003DBF56 /* Task.swift in Sources */,
+				5CA3C2D22D115C83003F647F /* GhadaView.swift in Sources */,
+				5CA3C2D42D115CCB003F647F /* HomePsge.swift in Sources */,
+				5CA3C2D82D115D4A003F647F /* Gif.swift in Sources */,
+				5CA3C2D62D115CF5003F647F /* PageContent.swift in Sources */,
 				ECD447792D0AD37A003DBF56 /* TaskList.swift in Sources */,
 				ECD4477D2D0AD37E003DBF56 /* TaskTimeFrame .swift in Sources */,
 				5CED04572D08BCE90021E731 /* ContentView.swift in Sources */,
+				5CA3C2DA2D115D7B003F647F /* HomeView.swift in Sources */,
 				5CED04552D08BCE90021E731 /* SparkApp.swift in Sources */,
 				ECD4477F2D0AD382003DBF56 /* TaskView.swift in Sources */,
 			);
