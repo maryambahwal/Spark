@@ -15,9 +15,23 @@ struct TaskSheet: View {
                 Section(header: Text("")) {
                     HStack {
                         Text("Task Name")
+                            .accessibilityLabel("Task Name Label")
+                            .accessibilityHint("Speak the task name to add")
                         Divider().frame(width: 2, height: 30)
+                        
                         TextField("shower", text: $taskName)
                             .autocapitalization(.words)
+                        
+                            .submitLabel(.done) // Sets the keyboard return button to "Done"
+                                .onSubmit {
+                                    // Dismiss the keyboard when "Done" is tapped
+                                    hideKeyboard()
+                                }
+                        
+                        
+                            .accessibilityLabel("Task Name Input")
+                            .accessibilityHint("Double-tap and speak to input task name")
+                            
                     }
                 }
 
@@ -31,6 +45,8 @@ struct TaskSheet: View {
                             Text("45 min").tag("45 min")
                             Text("60 min").tag("60 min")
                         }
+                        .accessibilityLabel("Task Duration Picker")
+                        .accessibilityHint("Speak the duration value to select it")
                     }
 
                     HStack {
@@ -39,6 +55,9 @@ struct TaskSheet: View {
                             Text("today").tag("today")
                             Text("tomorrow").tag("tomorrow")
                         }
+                        .accessibilityLabel("Task Date Picker")
+                        .accessibilityHint("Speak today or tomorrow to set the date")
+                                        
                     }
 
                     HStack {
@@ -48,11 +67,14 @@ struct TaskSheet: View {
                             Text("💫 Mid").tag("💫 Mid")
                             Text("🌙 Low").tag("🌙 Low")
                         }
+                        .accessibilityLabel("Task Priority Picker")
+                        .accessibilityHint("Speak high, mid, or low to set the priority")
                     }
                 
             }
             .navigationBarTitle("Add Task", displayMode: .inline)
             .navigationBarItems(leading: cancelButton, trailing: saveButton)
+            .accessibilityLabel("Task Sheet Form")
         }
     }
 
@@ -60,6 +82,8 @@ struct TaskSheet: View {
         Button("Cancel") {
             presentationMode.wrappedValue.dismiss() // Dismiss the view
         }
+        .accessibilityLabel("Cancel Button")
+        .accessibilityHint("Tap to cancel task creation")
     }
 
     private var saveButton: some View {
@@ -71,7 +95,13 @@ struct TaskSheet: View {
             presentationMode.wrappedValue.dismiss() // Dismiss the view after saving
         }
         .disabled(taskName.isEmpty) // Disable if task name is empty
+        .accessibilityLabel("Save Button")
+        .accessibilityHint("Tap to save the task if task name is provided")
     }
 }
 
-
+extension View {
+    func hideKeyboard() {
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
+}

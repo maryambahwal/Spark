@@ -4,11 +4,10 @@
 //
 //  Created by ohoud on 10/06/1446 AH.
 //
-
 import SwiftUI
 
+// TaskList
 struct TaskList: View {
-//    @State private var tasks: [Task] = [] // State to hold tasks
     @State private var tasks: [Task] = Task.sampleTasks
     @State private var showAddTask = false // State to show the add task sheet
 
@@ -28,13 +27,22 @@ struct TaskList: View {
                         .onDelete(perform: deleteItems)
                     }
                     .listStyle(PlainListStyle())
-                    .frame(height: geometry.size.height / 2) // Set to half the screen height
-                    Image("sittingSpark")
-                        .resizable()
-                        .frame(width: 200, height: 230)
-                                           .scaledToFit()
-                                           .frame(height: geometry.size.height / 2)
+//                    .frame(height: geometry.size.height / 2) // Set to half the screen height
                     
+//                    Image("sittingSpark")
+//                        .resizable()
+//                        .scaledToFit()
+//                        .frame(height: geometry.size.height / 2)
+                    HStack{
+                        Text("Complete your tasks, and watch me unleash my superpowers—just like you!")
+                            .bold()
+                            .frame(width: 255)
+                            .padding(.leading, 5)
+                        Image("sittingSpark")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(height: geometry.size.height / 7)
+                    }
                 }
             }
             .navigationBarTitle("My Tasks")
@@ -51,7 +59,6 @@ struct TaskList: View {
         }) {
             Image(systemName: "plus")
                 .foregroundColor(.our)
-                
         }
     }
 

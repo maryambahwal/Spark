@@ -13,6 +13,7 @@ struct TaskTimeFrame: View {
     var body: some View {
         VStack {
             Text(name) // Display the task name dynamically
+                .font(.title) // Automatically scales
                 .font(.system(size: 50, weight: .medium, design: .default))
                 .foregroundColor(.primary)
                 .padding(.bottom, 5)
@@ -67,13 +68,45 @@ struct TaskTimeFrame: View {
             Alert(
                 title: Text("Time is up!"),
                 message: Text("Tip: turn on back tap, so that you check the task off with ease!"),
-                primaryButton: .default(Text("Done")),
-                secondaryButton: .default(Text("+ 15 min")) {
+                primaryButton: .default(Text("Done")
+                    .accessibilityLabel("Done Button") // Voice Control-friendly
+                ) {
+                    print("Task Completed") // Done button logic
+                },
+                secondaryButton: .default(
+                    Text("+ 15 min")
+                        .accessibilityLabel("Add 15 Minutes")
+                ) {
                     remainingTime += 900 // Adds 15 minutes
-                    startTimer(duration: remainingTime)
                 }
             )
         }
+
+        // Custom hidden view to trigger accessibilityAction for Voice Control
+       // .hiddenView()
+            .accessibilityAction(named: Text("Add Fifteen Minutes")) {
+                remainingTime += 900 // Adds 15 minutes
+            }
+
+        // Function to add 15 minutes
+//        func addFifteenMinutes() {
+//            remainingTime += 900 // Adds 15 minutes
+//            startTimer(duration: remainingTime)
+//        }
+
+
+//        .alert(isPresented: $showAlert) {
+//            Alert(
+//                title: Text("Time is up!"),
+//                message: Text("Tip: turn on back tap, so that you check the task off with ease!"),
+//                primaryButton: .default(Text("Done")),
+//                secondaryButton: .default(Text("+ 15 min")) {
+//                    remainingTime += 900 // Adds 15 minutes
+//                    startTimer(duration: remainingTime)
+//                }
+//            )
+//        }
+        
     }
 
     func formatTime(_ time: TimeInterval) -> String {
